@@ -7,7 +7,6 @@ var searchbutton = document.querySelector('button');
 var cityList = document.querySelector('#cityList');
 
 // current weather data
-var currentIcon = document.querySelector("#currentIcon");
 // end current weather data
 
 var dayOne = document.querySelector('#dayOne');
@@ -65,10 +64,13 @@ var getCityInfo = function (cities, key) {
                             var dailyCity = document.querySelector('.cityName');
                             dailyCity.textContent = cities + ' ' +moment().format('(l)');
 
-                            // add city date to page
-                            //var todayDate = moment().format('(l)');
-                            //currentDate.textContent = todayDate;
-
+                            // add icon to page
+                            var currentIcon = document.querySelector("#currentIcon");
+                            var icon = data.current.weather[0].icon;
+                            console.log(icon);
+                            var iconLink = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+                            console.log(iconLink);
+                            currentIcon.setAttribute('src', iconLink);
                             //get temp to page
                             var dailyTemp = document.querySelector('.temp');
                             var currentTemp = data.current.temp;
