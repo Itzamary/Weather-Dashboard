@@ -5,15 +5,6 @@ var searchBox = document.querySelector('#searchSection');
 var cityName = document.querySelector('#searchBox');
 var searchbutton = document.querySelector('button');
 var cityList = document.querySelector('#cityList');
-
-// current weather data
-// end current weather data
-
-var dayOne = document.querySelector('#dayOne');
-var dayTwo = document.querySelector('#dayTwo');
-var dayThree = document.querySelector('#dayThree');
-var dayFour = document.querySelector('#dayFour');
-var DayFive = document.querySelector('#dayFive');
 var cityObj = [];
 
 // global variable end
@@ -107,6 +98,123 @@ var getCityInfo = function (cities, key) {
 var displayWeather = function(dataInfo, city) {
     console.log(city);
     console.log(dataInfo);
+    // day 1 after current day
+    // date
+    var day1Date = document.querySelector('#d1Date');
+    day1Date.textContent = moment().add(1, 'days').format('l');
+
+    //icon
+    var day1Icon = document.querySelector('#d1icon');
+    var iconD1 = dataInfo.list[0].weather[0].icon;
+    //console.log(iconD1);
+    var iconLinkD1 = `http://openweathermap.org/img/wn/${iconD1}@2x.png`;
+    //console.log(iconLinkD1);
+    day1Icon.setAttribute('src', iconLinkD1);
+
+    // temp
+    var day1Temp = document.querySelector('#d1Temp');
+    day1Temp.textContent = `Temp: ${dataInfo.list[0].main.temp} ℉`;
+
+    // wind
+    var day1Wind = document.querySelector('#d1Wind');
+    day1Wind.textContent = `Wind: ${dataInfo.list[0].wind.speed} MPH`;
+
+    // humidity
+    var day1Humidity = document.querySelector('#d1Humidity');
+    day1Humidity.textContent = `Humidity: ${dataInfo.list[0].main.humidity} %`;
+
+    // day 2 after current day
+    // date
+    var day2Date = document.querySelector('#d2Date');
+    day2Date.textContent = moment().add(2, 'days').format('l');
+
+    // icon
+    var day2Icon = document.querySelector('#d2icon');
+    var iconD2 = dataInfo.list[8].weather[0].icon;
+    var iconLinkD2 = `http://openweathermap.org/img/wn/${iconD2}@2x.png`;
+    day2Icon.setAttribute('src', iconLinkD2);
+
+    // temp
+    var day2Temp = document.querySelector('#d2Temp');
+    day2Temp.textContent = `Temp: ${dataInfo.list[8].main.temp} ℉`;
+
+    // wind
+    var day2Wind = document.querySelector('#d2Wind');
+    day2Wind.textContent = `Wind: ${dataInfo.list[8].wind.speed} MPH`;
+
+    // humidity
+    var day2Humidity = document.querySelector('#d2Humidity');
+    day2Humidity.textContent = `Humidity: ${dataInfo.list[8].main.humidity} %`;
+
+    // day 3 after current day
+    //date
+    var day3Date = document.querySelector('#d3Date');
+    day3Date.textContent = moment().add(3, 'days').format('l');
+
+    // icon
+    var day3Icon = document.querySelector('#d3icon');
+    var iconD3 = dataInfo.list[16].weather[0].icon;
+    var iconLinkD3 = `http://openweathermap.org/img/wn/${iconD3}@2x.png`;
+    day3Icon.setAttribute('src', iconLinkD3);
+
+    // temp
+    var day3Temp = document.querySelector('#d3Temp');
+    day3Temp.textContent = `Temp: ${dataInfo.list[16].main.temp} ℉`;
+    
+    // wind
+    var day3Wind = document.querySelector('#d3Wind');
+    day3Wind.textContent = `Wind: ${dataInfo.list[16].wind.speed} MPH`;
+    
+    // humidity
+    var day3Humidity = document.querySelector('#d3Humidity');
+    day3Humidity.textContent = `Humidity: ${dataInfo.list[16].main.humidity} %`;
+    
+
+    // day 4 after current day
+    // date
+    var day4Date = document.querySelector('#d4Date');
+    day4Date.textContent = moment().add(4, 'days').format('l');
+
+    // icon
+    var day4Icon = document.querySelector('#d4icon');
+    var iconD4 = dataInfo.list[24].weather[0].icon;
+    var iconLinkD4 = `http://openweathermap.org/img/wn/${iconD4}@2x.png`;
+    day4Icon.setAttribute('src', iconLinkD4);
+
+    // temp
+    var day4Temp = document.querySelector('#d4Temp');
+    day4Temp.textContent = `Temp: ${dataInfo.list[24].main.temp} ℉`;
+
+    // wind
+    var day4Wind = document.querySelector('#d4Wind');
+    day4Wind.textContent = `Wind: ${dataInfo.list[24].wind.speed} MPH`;
+
+    // humidity
+    var day4Humidity = document.querySelector('#d4Humidity');
+    day4Humidity.textContent = `Humidity: ${dataInfo.list[24].main.humidity} %`;
+
+    // day 5 after current day
+    // date
+    var day5Date = document.querySelector('#d5Date');
+    day5Date.textContent = moment().add(5, 'days').format('l');
+
+    // icon
+    var day5Icon = document.querySelector('#d5icon');
+    var iconD5 = dataInfo.list[32].weather[0].icon;
+    var iconLinkD5 = `http://openweathermap.org/img/wn/${iconD5}@2x.png`
+    day5Icon.setAttribute('src', iconLinkD5);
+
+    //temp
+    var day5Temp = document.querySelector('#d5Temp');
+    day5Temp.textContent = `Temp: ${dataInfo.list[32].main.temp} ℉`;
+
+    // wind
+    var day5Wind = document.querySelector('#d5Wind');
+    day5Wind.textContent = `Wind: ${dataInfo.list[32].wind.speed} MPH`;
+
+    // humididty
+    var day5Humidity = document.querySelector('#d5Humidity');
+    day5Humidity.textContent = `Humidity: ${dataInfo.list[24].main.humidity} %`;
     
 }
 
@@ -125,9 +233,6 @@ var loadCity = function () {
     //console.log(savedCity); reutes as null dont use
     
     for (let i = 0; i < cityObj.length; i++) {
-        var anchorItem = document.createElement('a');
-        //anchorItem.setAttribute('href', 'cityObj[i]');
-        //console.log(anchorItem)
         var listItem = document.createElement('li');
         listItem.className = "list"
         console.log(cityObj);
