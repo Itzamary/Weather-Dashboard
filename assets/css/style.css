@@ -24,7 +24,6 @@ body {
 #leftSection {
     width: 20%;
     text-align: center;
-    align-self: center;
 }
 
 #searchSection{
@@ -82,11 +81,10 @@ body {
 }
 
 #right-container{
-   margin: 10px;
    display: inline-flex;
    width: 100%;
    justify-content: space-between;
-   border: 1px solid pink;
+   padding: 10px;
 }
 
 #fiveDay{
@@ -101,7 +99,6 @@ body {
 .card{
     width: 18%;
     background-color: rgb(76, 83, 121);
-    border: 2px solid red;
 }
 
 .card-body{
