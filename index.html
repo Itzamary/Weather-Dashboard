@@ -18,14 +18,14 @@
         <!-- section to left-->
         <section id="leftSection">
             <!-- search section-->
-            <div id="searchSection">
+            <form id="searchSection">
                 <h2>Search for a City:</h2>
-                <input id="searchBox" type="text" placeholder="houston">
+                <input id="searchBox" type="text">
                 <button id="searchButton" type="submit">Search</button>
-            </div>
+            </form>
             <!-- saved citys section-->
             <div id="citys">
-                <ul>
+                <ul id="cityList">
                     
                 </ul>
             </div>
@@ -34,8 +34,12 @@
         <section id="sectionRight">
             <!-- city forcast for the day-->
             <div id="card-top">
-                <div>
-                  This is some text within a card body.
+                <div id="dailyForcast">
+                    <h2 class="cityName"></h2><span id="currentDate"></span><img id="currentIcon"/>
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                    <p class="uvIndex"></p>
                 </div>
             </div>
             <!-- 5 day forcast section-->
@@ -43,37 +47,38 @@
             <div id="right-container">
                 <!-- day one-->
                 <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
+                    <div id="dayOne" class="card-body">
+                      
                     </div>
                 </div>
                 <!-- day two-->
                 <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
+                    <div id="dayTwo" class="card-body">
+                      
                     </div>
                 </div>
                 <!-- day three-->
                 <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
+                    <div id="dayThree" class="card-body">
+                      
                     </div>
                 </div>
                 <!-- day four-->
                 <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
+                    <div id="dayFour" class="card-body">
+                      
                     </div>
                 </div>
                 <!-- day five-->
                 <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
+                    <div id="dayFive" class="card-body">
+                      
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

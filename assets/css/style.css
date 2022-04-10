@@ -23,6 +23,8 @@ body {
 /* search section left side */
 #leftSection {
     width: 20%;
+    text-align: center;
+    align-self: center;
 }
 
 #searchSection{
@@ -51,6 +53,26 @@ body {
     background-color: blue;
 }
 
+/* list items */
+#citys{
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+#cityList {
+    padding: 5px;
+    margin: 5 auto;
+}
+.list{
+    
+    background-color: gray;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 5px;
+
+}
+
 
 /* city weather right side */
 #sectionRight{
@@ -62,6 +84,7 @@ body {
 #right-container{
    margin: 10px;
    display: inline-flex;
+   width: 100%;
    justify-content: space-between;
    border: 1px solid pink;
 }
@@ -72,7 +95,6 @@ body {
 
 #card-top{
     border: 2px solid black;
-    height: 100px;
     margin: 10px;
 }
 
