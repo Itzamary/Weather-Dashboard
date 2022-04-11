@@ -55,8 +55,8 @@ body {
 /* list items */
 #citys{
     text-align: center;
-    padding: 10px;
-    display: block;
+    padding: 5px;
+    margin: 10px;
 }
 
 #cityList {
@@ -64,12 +64,16 @@ body {
     margin: 5 auto;
 }
 .list{
-    
-    background-color: gray;
+    width: 100%;
+    background-color: rgb(186, 186, 186);
     border-radius: 5px;
-    list-style-type: none;
-    margin: 5px;
+    
+    margin: 5px 0;
+    border: 1px solid black;
+}
 
+.list:hover{
+    background-color: rgb(89, 89, 89);
 }
 
 
@@ -86,6 +90,30 @@ body {
    justify-content: space-between;
    padding: 10px;
 }
+
+.uvIndex{
+    display: inline;
+}
+
+.uvFavorable{
+    background-color: green;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.uvModerate{
+    background-color: rgb(218, 218, 44);
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.uvSevere{
+    background-color: red;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+
 
 #fiveDay{
     margin: 10px;
