@@ -9,6 +9,7 @@ This project was made to search a city name within USA to find the city and its 
 * JavaScript
 
 ## Website
+https://itzamary.github.io/Weather-Dashboard/
 
 ## Website Image
 ![](./assets/images/Weather-Dashboard.png)
