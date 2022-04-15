@@ -104,3 +104,25 @@ body {
 .card-body{
     color: white;
 }
+
+
+/*  medai querys */
+@media screen and (max-width: 800px) {
+    #flex-parent {
+        display: block;
+    }
+
+    #leftSection {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #right-container{
+        display: block;
+    }
+    .card{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
