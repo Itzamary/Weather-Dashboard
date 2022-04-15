@@ -22,7 +22,7 @@ var submitCity = function(event) {
 
 // use api 5 day info to build page.
 var getCityInfo = function (cities, key) {
-    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${cities},US&appid=${key}&units=imperial`;
+    var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cities},US&appid=${key}&units=imperial`;
     // make a request to openWeather api
     fetch(apiUrl).then(function (response) {
         // if request was successfull
