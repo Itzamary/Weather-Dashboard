@@ -38,12 +38,12 @@ var getCityInfo = function (cities, key) {
 
                             // city name to page
                             var dailyCity = document.querySelector('.cityName');
-                            dailyCity.textContent = cities + ' ' +moment().format('(l)');
+                            dailyCity.innerHTML = cities + '<br><br> ' +moment().format('(l)');
 
                             // add icon to page
                             var currentIcon = document.querySelector("#currentIcon");
                             var icon = data.current.weather[0].icon;
-                            var iconLink = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+                            var iconLink = `http://openweathermap.org/img/wn/${icon}@4x.png`;
                             currentIcon.setAttribute('src', iconLink);
                             
                             //get temp to page

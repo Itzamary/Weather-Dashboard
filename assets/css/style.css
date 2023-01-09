@@ -8,7 +8,7 @@ body {
 
 /* header section*/
 #header {
-    background-image: linear-gradient(to right, lightblue, blue ); 
+    background-image: linear-gradient(to right, rgb(150, 164, 244), rgb(76, 83, 121) ); 
     text-align: center;
     color: white;
     font-size: 50px;
@@ -27,10 +27,8 @@ body {
 }
 
 #searchSection{
-    margin: 10px;
-    padding: 5px;
-    border-bottom:2px solid black;
-  
+    padding: 0 15px 15px 15px;
+    border-bottom: 3px solid black;
 }
 
 #searchBox{
@@ -39,17 +37,23 @@ body {
     width: 100%;
     border-radius: 5px;
     border:1px solid black;
+    background-color: rgb(150, 164, 244, 0.29)
+}
+#searchBox:focus {
+    background-color: rgb(76, 83, 121);
+    color: aliceblue;
 }
 
 #searchButton{
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(76, 83, 121);
     border-radius: 5px;
     border:1px solid black;
+    color:aliceblue;
 }
 
 #searchButton:hover{
-    background-color: blue;
+    background-color: rgb(150, 164, 244);
 }
 
 /* list items */
@@ -65,31 +69,41 @@ body {
 }
 .list{
     width: 100%;
-    background-color: rgb(186, 186, 186);
+    background-color: rgb(76, 83, 121);
     border-radius: 5px;
-    
+    color: aliceblue;
     margin: 5px 0;
     border: 1px solid black;
 }
 
 .list:hover{
-    background-color: rgb(89, 89, 89);
+    background-color: rgb(150, 164, 244);
 }
 
 
-/* city weather right side */
+/* city forcast for the day*/
+
 #sectionRight{
     display: block;
     width: 100%;
     height: 100%;
 }
 
-#right-container{
-   display: inline-flex;
-   width: 100%;
-   justify-content: space-between;
-   padding: 10px;
+.currentConditions {
+    text-align: center;
 }
+
+#card-top{
+    background-color: rgb(76, 83, 121);
+    border-radius: 5px;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 15px 10px 15px 10px;
+}
+
 
 .uvIndex{
     display: inline;
@@ -114,19 +128,24 @@ body {
 }
 
 
+/* 5 day city forcast*/
+#right-container{
+   display: inline-flex;
+   width: 100%;
+   justify-content: space-around;
+   padding: 10px;
+}
+
 
 #fiveDay{
     margin: 10px;
-}
-
-#card-top{
-    border: 2px solid black;
-    margin: 10px;
+    text-align: center;
 }
 
 .card{
     width: 18%;
     background-color: rgb(76, 83, 121);
+    border-radius: 5px;
 }
 
 .card-body{
