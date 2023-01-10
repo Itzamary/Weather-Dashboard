@@ -1,14 +1,16 @@
 # Weather-Dashboard
 
-## Purpose
-This project was made to search a city name within USA to find the city and its current weather and its 5 day forcast. it will include a city name, date, weather icon, temprature, wind speed, humididty percentage, and a uv index with color to show severity from favorable to severe.
+## Description
+This project is a weather app where a user enters a city name within Texas and its current weather id displayed along with its five day forcast. it will include a city name, date, weather icon, temprature, wind speed, humididty percentage, and a uv index with color to show severity from favorable to severe.
 
-## Built With
-* HTML
-* CSS
+## Technology / Framework
+* HTML5
+* CSS3
 * JavaScript
+* Open weather API
 
 ## Website
+https://itzamary.github.io/Weather-Dashboard/
 
 ## Website Image
 ![](./assets/images/Weather-Dashboard.png)
