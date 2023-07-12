@@ -74,6 +74,8 @@ var getCityInfo = function (cities, key) {
                                 uvCondition.setAttribute('class','uvModerate');
                             } else if (uvIndex >= 6 && uvIndex <=10.99) {
                                 uvCondition.setAttribute('class','uvSevere');
+                            } else {
+                                uvCondition.setAttribute('class', 'uvExtreme')
                             }
                             
                         })

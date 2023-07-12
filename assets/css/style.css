@@ -127,6 +127,12 @@ body {
     border-radius: 5px;
 }
 
+.uvExteme {
+    background-color: purple;
+    padding: 2px, 15px;
+    border-radius: 5px;
+}
+
 
 /* 5 day city forcast*/
 #right-container{
